@@ -1,13 +1,17 @@
 security:
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     providers:
-        in_memory: { memory: null }
+        web_service_user_provider:
+            id:
+                web_service_user_provider
+
     firewalls:
-        dev:
-            pattern: ^/(_(profiler|wdt)|css|images|js)/
-            security: false
-        main:
-            anonymous: true
+        secured_area:
+            pattern: ^/api
+            stateless: true
+            simple_preauth:
+                authenticator: jwt_auth.jwt_authenticator
+            provider: web_service_user_provider
 
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#firewalls-authentication
@@ -18,5 +22,5 @@ security:
     # Easy way to control access for large sections of your site
     # Note: Only the *first* access control that matches will be used
     access_control:
-        # - { path: ^/admin, roles: ROLE_ADMIN }
-        # - { path: ^/profile, roles: ROLE_USER }
+         - { path: ^/api/private, roles: ROLE_OAUTH_AUTHENTICATED }
+         - { path: ^/api/public, roles: IS_AUTHENTICATED_ANONYMOUSLY }
