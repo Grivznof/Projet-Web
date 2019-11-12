@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Container } from 'reactstrap';
-import NavBar from './Navigation';
 import { Route, Switch, Link, withRouter } from 'react-router-dom';
 import Callback from './Auth/Callback';
 import SecuredRoute from './Auth/SecuredRoute';
@@ -8,6 +7,7 @@ import PrivateResources from './Auth/privateResources';
 import PublicResources from './Auth/publicResources';
 import auth0Client from './Auth/Utils/Auth';
 import Products from './Shop/Products';
+import Nav from './Nav';
 
 /**
  * Le component Home permettant de regarder si /callback a été appelé, signe que l'utilisateur essaye de se connecter
@@ -33,7 +33,7 @@ class Home extends Component {
 	render() {
 		return (
 			<div>
-				<NavBar />
+				<Nav />
 				<Switch>
 					<Route exact path={'/callback'} component={Callback} />
 					<SecuredRoute path={'/private'} component={PrivateResources} />

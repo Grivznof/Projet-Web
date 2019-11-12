@@ -6,7 +6,7 @@ import auth0Client from './Utils/Auth';
 import ProductForm from '../Shop/ProductForm';
 
 /**
- * Component permettant de récupérer les ressources dans / private si l'utilisateur est authentifié et de les
+ * Component permettant de récupérer les ressources dans /private si l'utilisateur est authentifié et de les
  * afficher
  */
 
