@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import { Card, CardText, CardBody, CardTitle, Container, Row, Col, Badge } from 'reactstrap';
 import axios from 'axios';
-import auth0Client from '../utils/Auth';
-import ProductForm from './ProductForm';
+import auth0Client from './authUtils/Auth';
+import ProductForm from '../Shop/ProductForm';
 
 /**
  * Component permettant de récupérer les ressources dans / private si l'utilisateur est authentifié et de les
