@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import auth0Client from '../utils/Auth';
+import auth0Client from './Auth/Utils/Auth';
 
 /**
  * component navbar qui affichera une barre de navigation sur toutes les pages du site

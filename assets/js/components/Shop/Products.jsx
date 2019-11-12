@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import ProductForm from './ProductForm';
 import { Card, CardImg, CardText, CardBody, CardTitle, Container, Button, Alert, Row, Col, Badge } from 'reactstrap';
-import { APP } from '../utils/URLmanagement';
+import { APP } from '../Auth/Utils/URLmanagement';
 import axios from 'axios';
+
 class Products extends Component {
 	constructor(props) {
 		super(props);
