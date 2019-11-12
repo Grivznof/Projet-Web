@@ -1,6 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import auth0Client from './authUtils/Auth';
+import auth0Client from './Utils/Auth';
 
 /**
  * Component permettant de faire patienter l'utilisateur pendant que sont profil se charge

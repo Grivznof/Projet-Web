@@ -6,7 +6,7 @@ import Callback from './Auth/Callback';
 import SecuredRoute from './Auth/SecuredRoute';
 import PrivateResources from './Auth/privateResources';
 import PublicResources from './Auth/publicResources';
-import auth0Client from './Auth/authUtils/Auth';
+import auth0Client from './Auth/Utils/Auth';
 import Products from './Shop/Products';
 
 /**
