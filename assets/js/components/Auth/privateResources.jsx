@@ -2,7 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { Card, CardText, CardBody, CardTitle, Container, Row, Col, Badge } from 'reactstrap';
 import axios from 'axios';
-import auth0Client from './Utils/Auth';
+import auth0Client from './authUtils/Auth';
 import ProductForm from '../Shop/ProductForm';
 
 /**

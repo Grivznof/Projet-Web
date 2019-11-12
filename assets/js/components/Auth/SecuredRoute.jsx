@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import auth0Client from './Utils/Auth';
+import auth0Client from './authUtils/Auth';
 
 /**
  * Component pour sécuriser l'accés aux données privées des étudiants CESI

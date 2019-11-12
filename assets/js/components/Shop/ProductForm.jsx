@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Form, FormGroup, Label, Alert, Input } from 'reactstrap';
-import { APP } from '../Auth/Utils/URLmanagement';
+import { APP } from '../Auth/authUtils/URLmanagement';
 import axios from 'axios';
 
 class ProductForm extends Component {
