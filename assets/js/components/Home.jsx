@@ -33,7 +33,9 @@ class Home extends Component {
 	render() {
 		return (
 			<div>
-				<Nav />
+				<div>
+					<Nav />
+				</div>
 				<Switch>
 					<Route exact path={'/callback'} component={Callback} />
 					<SecuredRoute path={'/private'} component={PrivateResources} />
