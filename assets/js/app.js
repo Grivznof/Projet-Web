@@ -3,7 +3,7 @@ import ReactDom from 'react-dom';
 import { Container } from 'reactstrap';
 import { BrowserRouter } from 'react-router-dom';
 import Products from './components/Shop/Products';
-import Home2 from './components/HomeAuth2';
+import Home2 from './components/HomeAuth';
 
 class App extends Component {
 	render() {
