@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { Card, CardText, CardBody, CardTitle, Container, Row, Col, Badge } from 'reactstrap';
 import axios from 'axios';
-import Products from './Products';
+import Products from '../Shop/Products';
 
 /**
  * Component permettant de récupérer les ressources situées dans /public et de les formatter pour après 
  * pouvoir être affichées
  */
 
-class PublicResources extends Component {
+class PublicResources extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
